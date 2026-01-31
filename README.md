@@ -88,6 +88,7 @@ Entities like lights, switches, and fans show different icons based on their sta
 | **Candlestick** | <img src="samples/widgets/candlestick_1x1.png"> | <img src="samples/widgets/candlestick_1x2.png"> | <img src="samples/widgets/candlestick_2x1.png"> | <img src="samples/widgets/candlestick_2x2.png"> | <img src="samples/widgets/candlestick_2x3.png"> | <img src="samples/widgets/candlestick_3x3.png"> |
 | **Climate** | <img src="samples/widgets/climate_1x1.png"> | <img src="samples/widgets/climate_1x2.png"> | <img src="samples/widgets/climate_2x1.png"> | <img src="samples/widgets/climate_2x2.png"> | <img src="samples/widgets/climate_2x3.png"> | <img src="samples/widgets/climate_3x3.png"> |
 | **Attribute List** | <img src="samples/widgets/attribute_list_1x1.png"> | <img src="samples/widgets/attribute_list_1x2.png"> | <img src="samples/widgets/attribute_list_2x1.png"> | <img src="samples/widgets/attribute_list_2x2.png"> | <img src="samples/widgets/attribute_list_2x3.png"> | <img src="samples/widgets/attribute_list_3x3.png"> |
+| **Image** | <img src="samples/widgets/image_1x1.png"> | <img src="samples/widgets/image_1x2.png"> | <img src="samples/widgets/image_2x1.png"> | <img src="samples/widgets/image_2x2.png"> | <img src="samples/widgets/image_2x3.png"> | <img src="samples/widgets/image_3x3.png"> |
 
 ### Candlestick Chart
 
@@ -167,7 +168,7 @@ The default `watchOS` theme is inspired by Apple's watchOS Human Interface Guide
 
 ## Features
 
-- **15 widget types**: Clock, entity, attribute list, media, chart, candlestick, text, gauge, progress, weather, status, climate, camera, and more
+- **15 widget types**: Clock, entity, attribute list, media, chart, candlestick, text, gauge, progress, weather, status, climate, camera, image, and more
 - **19 layout options**: Fullscreen, grids, splits, hero variants, sidebars, and more
 - **11 visual themes**: watchOS (default), Classic, Minimal, Neon, Retro, Soft, Light, Ocean, Sunset, Forest, Candy
 - **Visual configuration**: Custom sidebar panel with live preview
@@ -387,6 +388,7 @@ data:
 | `media` | Now playing from media player |
 | `multi_progress` | Multiple progress items |
 | `status_list` | Multiple status indicators |
+| `image` | Static image or GIF from URL or local file |
 
 ## Layout Types
 
