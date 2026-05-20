@@ -87,12 +87,34 @@ class ImageWidget(Widget):
         show_label: Whether to show a label below the image
     """
 
+    WIDGET_TYPE: ClassVar[str] = "image"
+    SCHEMA: ClassVar[dict[str, Any]] = {
+        "name": "image",
+        "needs_entity": False,
+        "entity_domains": None,
+        "options": [
+            {
+                "key": "source",
+                "type": "text",
+                "label": "Source", 
+            },
+            {
+                "key": "fit",
+                "type": "select",
+                "label": "Fit Mode",
+                "options": ["cover", "contain"],
+                "default": "cover",
+            },
+            {"key": "show_label", "type": "boolean", "label": "Show Label", "default": False},
+        ],
+    }
+
     def __init__(self, config: WidgetConfig) -> None:
         """Initialize the image widget."""
         super().__init__(config)
         self.source = config.options.get("source", "")
         self.show_label = config.options.get("show_label", False)
-        self.fit = config.options.get("fit", "contain")
+        self.fit = config.options.get("fit", "cover")
 
     def render(self, ctx: RenderContext, state: WidgetState) -> Component:
         """Render the image widget.
