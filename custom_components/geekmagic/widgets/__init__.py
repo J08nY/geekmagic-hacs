@@ -56,6 +56,7 @@ _ALL_WIDGETS: list[type[Widget]] = [
     EntityWidget,
     GaugeWidget,
     IconWidget,
+    ImageWidget,
     MediaWidget,
     MultiProgressWidget,
     ProgressWidget,
